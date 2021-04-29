@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+</head>
+<style>
+ .google-image {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-input-container{ /*Center Search Form*/
+   display: block;
+   position: relative;
+   margin: auto;
+   bottom: 170px;
+   text-align: center;
+   width: 40rem;
+   padding: 1rem;
+   border-radius: 3rem;
+   border: thin solid #EAEAEA;
+  }
+  input{ /*Input Container*/
+    border: none;
+    position: relative;
+    width: 35rem;
+    padding: 0.6rem;
+  } 
+  input:focus {/*Removes Input Outline*/
+    outline: none !important;
+  }
+ .below-input-buttons{
+    position: relative;
+    display: block;
+    margin:auto;
+    bottom: 150px;
+    text-align:center;
+    width: 20rem;
+  }
+  #google-search{
+    padding: 10px;
+    border: none;
+  }
+  .divider {
+    display: inline-block;
+    height: auto;
+    margin: 5px;
+  }
+  #im-feeling-lucky {
+    padding: 10px;
+    border: none;
+  }
+  #nav-bar {/*Add Space between Left & Right Nav Bar*/
+    display:flex;
+    justify-content: space-between; 
+  }
+  ul {
+    list-style-type: none;
+    margin:0;
+    padding:0; 
+  }
+  li {
+   display: inline-block;
+   padding: 10px /*Add Space between Each Text*/;
+   margin-right: 10px;
+  }
+  li a {
+    display: block;
+    text-decoration:none /*Remove List Format*/;
+    color:#000;
+  }
+  #last-child{
+    border: 2px solid #4285f4;
+    background-color:#4285f4; 
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .material-icons { /*Centers Icon Middle*/
+    vertical-align: middle;
+  }
+  #sign-in {
+    color: #fff /* Make Text White*/;
+  }
+  #footer {
+    display:flex;
+    justify-content: space-between;
+    background-color: #EAEAEA; 
+    padding: 25px;
+    bottom: 0
+  }
+</style>
+<body>
+  <!--Top Nav Bar--> 
+  <div id="nav-bar">
+    <div id="nav-bar-left">
+      <ul>
+        <li><a href="about.asp">About</a></li>
+        <li><a href="store.asp">Store</a></li>
+      </ul>
+    </div>
+    <div id="nav-bar-right">
+      <li><a href="gmail.asp">Gmail</a></li>
+      <li><a href="images.asp">Images</a></li>
+      <!--Apps Nav Bar Icon-->
+      <li><a href="apps.asp">
+        <span class="material-icons">apps</span>
+        </a>
+      </li>
+      <!--Sign In-->
+      <li id="last-child">
+        <a href="signin.asp">
+         <span id="sign-in">Sign in</span>
+       </a>
+      </li>
+    </div>
+   </div>
+   <!--Google Image--> 
+   <div class="google-image"> 
+     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+   </div>
+    <!--Search Field and Icons-->
+   <div class="icon-input-container">
+      <span class="icon-container">
+        <span class="material-icons" style="left:0;">search</span>
+      </span>
+      <input class="icon-input" type="text">
+      <span class="icon-container">
+        <span class="material-icons"
+         tabindex="0" role="button">mic</span> <!--make button clickable-->
+      </span>
+   </div>
+    <!--Below Search Form-->   
+    <div class="below-input-buttons">
+     <button id="google-search" type="button">
+       Google Search
+     </button>
+       <div class="divider"></div>
+       <button id="im-feeling-lucky"type="button">
+        I'm Feeling Lucky 
+       </button>
+     </div>
+   </div>
+</body>
+<!--Footer Section-->
+<div id="footer">
+  <div id="footer-left">
+    <ul>
+      <li><a href="advertising.asp"> Advertising</a></li>
+      <li><a href="business.asp">Business</a></li>
+      <li><a href="howsearchworks.asp">How Search Works</a></li>
+    </ul>
+  </div>
+  <div id="footer-right">
+    <ul>
+      <li><a href="privacy.asp">Privacy</a></li>
+      <li><a href="terms.asp">Terms</a></li>
+      <li><a href="Settings">Settings</a></li>
+    </ul>
+  </div>
+</div>
+</html>
+ 
+
